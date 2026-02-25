@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Same Sky · Ocean Edition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+        <div class="shell header-row">
+            <div class="brand">🌊 Same Sky</div>
+            <nav aria-label="Primary" class="top-nav">
+                <a href="#home" class="focusable">Home</a>
+                <a href="#reasons" class="focusable">Reasons</a>
+                <a href="#weather" class="focusable">Weather</a>
+                <a href="#poetry" class="focusable">Poetry</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="shell">
+        <section id="home" class="section">
+            <p class="eyebrow">LONG-DISTANCE RELATIONSHIP SYSTEM</p>
+            <h1>Same sky. Different cities. One continuous story.</h1>
+            <p class="subtext">
+                A calm, ocean-inspired keepsake—minimal, data-driven, and built with engineering precision.
+            </p>
+
+            <div class="feature-grid">
+                <a class="glass-card feature-card focusable" href="#reasons">
+                    <h2>100+ Reasons · Endless Tide</h2>
+                    <p>Floating cards of short reasons. Hover to pause and read slowly.</p>
+                </a>
+                <a class="glass-card feature-card focusable" href="#weather">
+                    <h2>Our Shared Weather</h2>
+                    <p>Two-city weather snapshots with same-horizon emotional overlays.</p>
+                </a>
+                <a class="glass-card feature-card focusable" href="#poetry">
+                    <h2>Magnetic Poetry</h2>
+                    <p>Drag ocean-glass word tiles to compose your own distance poem.</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="reasons" class="section divider" aria-labelledby="reasons-title">
+            <h2 id="reasons-title">100+ Reasons Why I Love You · Endless Tide</h2>
+            <p class="section-note">A horizontal wave of one-line reminders. Hover to pause.</p>
+            <div class="tape-wrap" aria-live="polite">
+                <div class="tape" id="reasonsTape"></div>
+            </div>
+        </section>
+
+        <section id="weather" class="section divider" aria-labelledby="weather-title">
+            <h2 id="weather-title">Our Shared Weather</h2>
+            <p class="section-note">Live weather via Open-Meteo (free, no API key) with graceful fallback.</p>
+            <div class="weather-grid" id="weatherGrid"></div>
+            <p class="status" id="weatherStatus"></p>
+        </section>
+
+        <section id="poetry" class="section divider" aria-labelledby="poetry-title">
+            <h2 id="poetry-title">Magnetic Poetry Board · Drift & Compose</h2>
+            <p class="section-note">Drop words onto the water surface. Click placed words to remove.</p>
+            <div class="poetry-layout">
+                <aside class="glass-card word-bank" id="wordBank" aria-label="Word tile bank"></aside>
+                <section class="glass-card poetry-board" id="poetryBoard" aria-label="Poetry composition board">
+                    <p class="board-hint">Drop words here</p>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="divider">
+        <div class="shell footer-row">
+            <p>Built for quiet, intentional love.</p>
+            <a class="focusable" href="#">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
